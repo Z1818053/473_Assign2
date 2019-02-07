@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +14,14 @@ namespace Assign2 {
             InitializeComponent();
 
 
+        }
+
+        private void guildRoster_Click(object sender, EventArgs e)
+        {
+            foreach (KeyValuePair<uint, string> entry in guildList)
+            {
+                Console.WriteLine(entry.Value.ToString());
+            }
         }
     }
 }
